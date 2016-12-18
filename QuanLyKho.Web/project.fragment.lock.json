@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "exports": {
+    "QuanLyKho.Common/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/QuanLyKho.Comon.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/QuanLyKho.Comon.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/QuanLyKho.Comon.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "QuanLyKho.Data/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/QuanLyKho.Data.dll": {}
+      },
+      "runtime": {
+        "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.dll": {},
+        "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.dll": {},
+        "bin/Debug/QuanLyKho.Data.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/QuanLyKho.Data.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "QuanLyKho.Model/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/QuanLyKho.Model.dll": {}
+      },
+      "runtime": {
+        "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.dll": {},
+        "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.dll": {},
+        "bin/Debug/QuanLyKho.Model.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/QuanLyKho.Model.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
