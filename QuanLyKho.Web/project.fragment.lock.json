@@ -55,6 +55,23 @@
           "copyToOutput": true
         }
       }
+    },
+    "QuanLyKho.Service/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/QuanLyKho.Service.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/QuanLyKho.Service.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/QuanLyKho.Service.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
     }
   }
 }

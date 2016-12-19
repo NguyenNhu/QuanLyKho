@@ -6,7 +6,7 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>f331ece6-833a-4844-8048-700ec4094b94</ProjectGuid>
+    <ProjectGuid>92dd1680-db3f-435b-b732-1af3b8d260ef</ProjectGuid>
     <RootNamespace>QuanLyKho.Web</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
@@ -23,6 +23,7 @@
     <ProjectReference Include="..\QuanLyKho.Comon\QuanLyKho.Common.csproj" />
     <ProjectReference Include="..\QuanLyKho.Data\QuanLyKho.Data.csproj" />
     <ProjectReference Include="..\QuanLyKho.Model\QuanLyKho.Model.csproj" />
+    <ProjectReference Include="..\QuanLyKho.Service\QuanLyKho.Service.csproj" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\DotNet.Web\Microsoft.DotNet.Web.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>
