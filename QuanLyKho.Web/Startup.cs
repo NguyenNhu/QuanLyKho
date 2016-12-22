@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using QuanLyKho.Data;
 using QuanLyKho.Web.Data;
 using QuanLyKho.Web.Models;
 using QuanLyKho.Web.Services;
@@ -46,6 +47,8 @@ namespace QuanLyKho.Web
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<QuanLyKhoDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()

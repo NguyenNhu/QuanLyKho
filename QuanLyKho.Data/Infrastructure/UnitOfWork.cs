@@ -21,6 +21,7 @@ namespace QuanLyKho.Data.Infrastructure
         }
         public void Commit()
         {
+            // Save in database
             _dbcontext.SaveChanges();
         }
     }

@@ -1,16 +1,17 @@
-﻿using System.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
 using QuanLyKho.Model.Models;
 
 namespace QuanLyKho.Data
 {
     public class QuanLyKhoDbContext : DbContext
     {
-        public QuanLyKhoDbContext() : base("DefaultConnection")
+        public QuanLyKhoDbContext(DbContextOptions<QuanLyKhoDbContext> options) : base(options)
         {
-            this.Configuration.LazyLoadingEnabled = false;
+            
+            //this.Configuration.LazyLoadingEnabled = false;
         }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
         }
@@ -25,7 +26,7 @@ namespace QuanLyKho.Data
         public DbSet<PostCategory> PostCategories { get; set; }
         public DbSet<PostTag> PostTags { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductCategory> ProductCategorys { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
         public DbSet<Slide> Slides { get; set; }
         public DbSet<SupportOnline> SupportOnlines { get; set; }

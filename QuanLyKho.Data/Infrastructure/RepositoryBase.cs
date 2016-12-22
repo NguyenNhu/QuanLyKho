@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace QuanLyKho.Data.Infrastructure
 {
-    public abstract class RepositoryBase<T> where T : class
+    public abstract class RepositoryBase<T> :IRepository<T>where T : class
     {
         #region Properties
         private QuanLyKhoDbContext _dbContext;
-        private readonly IDbSet<T> _dbSet;
+        private readonly DbSet<T> _dbSet;
+
 
         protected IDbFactory DbFactory
         {
