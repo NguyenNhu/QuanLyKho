@@ -1,8 +1,9 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace QuanLyKho.Data.Infrastructure
 {
-    public class DbFactory : Disposable, IDbFactory
+    public class DbFactory : Disposable,IDbFactory
     {
         private QuanLyKhoDbContext _dbcontext;
         public QuanLyKhoDbContext Init()

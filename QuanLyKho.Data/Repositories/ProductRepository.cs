@@ -7,10 +7,10 @@ namespace QuanLyKho.Data.Repositories
     {
     }
 
-    public class ProductRepository : RepositoryBase<Product>
-    {
-        public ProductRepository(IDbFactory dbFactory) : base(dbFactory)
-        {
-        }
-    }
+    //public class ProductRepository : RepositoryBase<Product>
+    //{
+    //    public ProductRepository(IDbFactory dbFactory) : base(dbFactory)
+    //    {
+    //    }
+    //}
 }

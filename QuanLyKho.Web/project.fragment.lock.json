@@ -111,6 +111,13 @@
         "../packages/System.Text.Encodings.Web.4.3.0/lib/netstandard1.0/System.Text.Encodings.Web.dll": {},
         "../packages/System.Xml.ReaderWriter.4.3.0/lib/net46/System.Xml.ReaderWriter.dll": {},
         "bin/Debug/QuanLyKho.Data.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/QuanLyKho.Data.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
       }
     },
     "QuanLyKho.Model/1.0.0": {
@@ -222,6 +229,13 @@
         "../packages/System.Text.Encodings.Web.4.3.0/lib/netstandard1.0/System.Text.Encodings.Web.dll": {},
         "../packages/System.Xml.ReaderWriter.4.3.0/lib/net46/System.Xml.ReaderWriter.dll": {},
         "bin/Debug/QuanLyKho.Service.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/QuanLyKho.Service.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
       }
     }
   }

@@ -11,6 +11,10 @@ namespace QuanLyKho.Data
             //this.Configuration.LazyLoadingEnabled = false;
         }
 
+        public QuanLyKhoDbContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
